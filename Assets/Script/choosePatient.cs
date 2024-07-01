@@ -5,6 +5,8 @@ using UnityEngine;
 public class choosePatient : MonoBehaviour
 {
     public GameObject info;
+    public GameObject choosePatientParent;
+    public GameObject chooseToothUI;
     public GameObject[] chooseChildBtn;
     public GameObject[] infoChild;
 
@@ -32,7 +34,8 @@ public class choosePatient : MonoBehaviour
 
     public void toNabilCase()
     {
-
+        choosePatientParent.SetActive(false);
+        chooseToothUI.SetActive(true);
     }
 
     public void toSyifaCase()
